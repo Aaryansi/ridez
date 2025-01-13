@@ -1,0 +1,49 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // Google Services Plugin
+}
+
+android {
+    namespace = "com.example.ridez"
+    compileSdk = flutter.compileSdkVersion // Uses Flutter's compile SDK version
+    ndkVersion = flutter.ndkVersion // Uses Flutter's NDK version
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8 // Java compatibility settings
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8" // Kotlin compatibility
+    }
+
+    defaultConfig {
+        applicationId = "com.example.ridez" // Your app's package name
+        minSdk = 23 // Uses Flutter's minimum SDK version
+        targetSdk = flutter.targetSdkVersion // Uses Flutter's target SDK version
+        versionCode = flutter.versionCode // App version code from Flutter
+        versionName = flutter.versionName // App version name from Flutter
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // Use debug signing config for release build
+        }
+    }
+}
+
+flutter {
+    source = "../.." // Links to Flutter project source
+}
+
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.7.0') // Use Firebase BOM for version management
+    implementation 'com.google.firebase:firebase-auth-ktx' // Firebase Authentication
+    implementation 'com.google.firebase:firebase-firestore-ktx' // Firebase Firestore
+    implementation 'com.google.android.gms:play-services-auth:20.5.0' // Google Play Services for Firebase
+}
+
+apply plugin: 'com.google.gms.google-services' // Apply Google Services at the bottom

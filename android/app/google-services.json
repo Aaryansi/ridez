@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "897454483442",
+    "project_id": "ridez-ecd49",
+    "storage_bucket": "ridez-ecd49.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897454483442:android:b9aa2da9f0a110de77ed6b",
+        "android_client_info": {
+          "package_name": "com.example.ridez"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnqlaFvuD0F713LFpXQhpWv02TkQvILwc"
+        },
+        {
+          "current_key": "AIzaSyAcx3klBvCnTAut1CdouEZOW9UQtqK2SYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897454483442:android:2dcc117799dab40c77ed6b",
+        "android_client_info": {
+          "package_name": "com.example.ridez"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnqlaFvuD0F713LFpXQhpWv02TkQvILwc"
+        },
+        {
+          "current_key": "AIzaSyAcx3klBvCnTAut1CdouEZOW9UQtqK2SYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
